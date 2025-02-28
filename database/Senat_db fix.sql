@@ -147,7 +147,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id_senat`, `email`, `password`, `foto`) VALUES
-(1, 'atmaja123putra@gmail.com', 'gasken1234', '../uploads/foto_profil.jpg');
+(1, 'youremailhere', 'gasken1234', '../uploads/foto_profil.jpg');
 
 -- --------------------------------------------------------
 
