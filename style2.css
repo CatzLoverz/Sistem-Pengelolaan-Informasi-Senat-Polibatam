@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Gurajada";
+    src: url("font/Gurajada-Regular.ttf");
+    font-weight: 400;
+}
+:root{
+    --color1:#427CEC;
+    --color2:#7DA9FF;
+    --color3:#ffffff;
+    
+}
+html,
+body{
+    height: 100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    font-size:16px;
+    font-family: "Gurajada", serif !important;
+    box-sizing: border-box;
+    /* background-color:var(--color2) !important; */
+}
+
+/* Navbar */
+
+.navbar-brand{
+    max-height: 80px;
+    font-size:1.8em !important;
+
+}
+
+.nav-link{
+    font-size:1.5em !important;
+    opacity:0.7;
+}
+.nav-link:hover{
+    color:black !important;
+}
+
+.menu{
+    background-color: var(--color1);
+}
+.menu a{
+    color:var(--color3) !important;
+}
+
+.current{
+    opacity:1;
+}
+
+
+/* HOME */
+
+.senat-rapat-img{
+    width:40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.deskripsi{
+    display: flex;
+    justify-content: space-between;
+    width:fit-content;
+    height: fit-content;
+    margin-bottom: 70px;
+}
+
+
+.p-deskripsi{
+    /* float:left; */
+    width:50%;
+    text-align: justify;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    text-indent: 1em;
+}
+
+/* BERITA */
+
+#berita{
+    border:2px solid black;
+}
+
+/* STRUKTUR */
+
+/* ASPIRASI */
+#form-aspirasi{
+    background-color: var(--color2) !important;
+    color:white !important;
+    padding:5% 5% 3%;
+}
+
+#form-aspirasi #judul{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-aspirasi textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+/* Jadwal Rapat */  
+.jadwal th, .jadwal td{
+    font-size:1.5em;
+}
+
+/* FOOTER */
+footer{
+    height: 300px;
+    background-color:var(--color1);
+}
+
+footer{
+    color:#ddd;
+}
+footer img{
+    width:25%;
+}
+
+
+/* LOGIN */
+
+
+
+
+@media screen and (max-width:992px){
+    .deskripsi{
+        flex-direction: column-reverse;
+        justify-content: unset;
+    }
+    .deskripsi img{
+        width:100%;
+    }
+    .p-deskripsi{
+        width:100%;
+        margin-top:38px;
+    }
+}
