@@ -74,13 +74,13 @@ if ($sql->execute() === TRUE) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'rafiikhwansyah1@gmail.com'; // Email Anda
-            $mail->Password = 'ybyd mdie vlli objt'; // App Password
+            $mail->Username = '..'; // Email Anda
+            $mail->Password = '..'; // App Password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
             // Pengaturan penerima dan pengirim
-            $mail->setFrom('rafiikhwansyah1@gmail.com', 'SENAT POLIBATAM');
+            $mail->setFrom('youremailhere', 'SENAT POLIBATAM');
             foreach ($email_list as $email) {
                 $mail->addAddress($email);
             }
