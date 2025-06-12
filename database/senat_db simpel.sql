@@ -104,17 +104,17 @@ INSERT INTO `login` (`id_senat`, `email`, `password`, `foto`) VALUES
 (1, '[Email Anda Disini]', '[Password Anda Disini]', '../uploads/foto_profil.jpg');
 
 INSERT INTO `aspirasi` (`id`, `judul`, `kategori`, `aspirasi`) VALUES
-(1, 'parkir kendaraan', 'parkir kendaraan', 'tolong perluas lahan untuk parkir ya'),
-(2, 'parkir kendaraan', 'parkir kendaraan', 'tolong perluas lahan untuk parkirnya ya'),
-(3, 'pendidikan umum', 'pendidikan', 'setiap prodi mungkin dapat pembelajaran umum untuk pengetahuan yang luas'),
-(4, 'pembelajaran', 'pendidikan', 'sebaiknya dalam pembelajran disertai juga dengan ice breaking'),
-(5, 'fasilitas komputer', 'fasilitas belajar', 'mungkin perbanyak fasilitas komputer'),
-(6, 'jaringan WIFI', 'fasilitas belajar', 'mungkin perbanyak jaringan wifi'),
-(7, 'CCTV', 'keamanan', 'perbanyak cctv untuk mencegah kemalingan'),
-(8, 'petugas keamanan', 'keamanan', 'perbanyak petugas keamanan untuk mencegah kemalingan'),
-(9, 'kebersihan RTF', 'kebersihan', 'kebersihan di lingkungan gedung RTF kurang'),
-(10, 'daun kerinng di poltek', 'kebersihan', 'masih banyak daun-daun kering yang bertebaran di poltek'),
-(11, 'batas waktu di poltek', 'lainnya', 'batas waktu untuk di poltek mohon diperpanjang untuk dipakai diskusi organisasi');
+(1, 'Parkir Kendaraan', 'Parkir Kendaraan', 'tolong perluas lahan untuk parkir ya'),
+(2, 'Parkir Kendaraan', 'Parkir Kendaraan', 'tolong perluas lahan untuk parkirnya ya'),
+(3, 'Pendidikan', 'Pendidikan', 'setiap prodi mungkin dapat pembelajaran umum untuk pengetahuan yang luas'),
+(4, 'Pembelajaran', 'Pendidikan', 'sebaiknya dalam pembelajran disertai juga dengan ice breaking'),
+(5, 'fasilitas komputer', 'Fasilitas Belajar', 'mungkin perbanyak fasilitas komputer'),
+(6, 'jaringan WIFI', 'Fasilitas Belajar', 'mungkin perbanyak jaringan wifi'),
+(7, 'CCTV', 'Keamanan', 'perbanyak cctv untuk mencegah kemalingan'),
+(8, 'petugas keamanan', 'Keamanan', 'perbanyak petugas keamanan untuk mencegah kemalingan'),
+(9, 'kebersihan RTF', 'Kebersihan', 'kebersihan di lingkungan gedung RTF kurang'),
+(10, 'daun kerinng di poltek', 'Kebersihan', 'masih banyak daun-daun kering yang bertebaran di poltek'),
+(11, 'batas waktu di poltek', 'Lainnya', 'batas waktu untuk di poltek mohon diperpanjang untuk dipakai diskusi organisasi');
 
 INSERT INTO `berita` (`id`, `judul`, `deskripsi`, `tanggal`, `penulis`, `foto`) VALUES
 (1, 'senat tetapkan 13 calon direktur politeknik negri batam', 'Tahap penajaringan politeknik negri batam pada periode 2024-2028', '2024-11-28', 3, 'Polibatam.jpg'),
