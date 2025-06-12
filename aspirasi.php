@@ -22,12 +22,12 @@
         <label for="judul" class="fs-2">Kategori</label><br>
         <select name="kategori" id="kategori-aspirasi" class="form-select fs-4" required>
             <option value="" class="fs-4" selected hidden></option>
-            <option value="pendidikan" class="fs-4">Pendidikan</option>
-            <option value="Fasilitas" class="fs-4">Fasilitas Belajar</option>
+            <option value="Pendidikan" class="fs-4">Pendidikan</option>
+            <option value="Fasilitas Belajar" class="fs-4">Fasilitas Belajar</option>
             <option value="Keamanan" class="fs-4">Keamanan</option>
-            <option value="Parkir" class="fs-4">Parkir Kendaraan</option>
+            <option value="Parkir Kendaraan" class="fs-4">Parkir Kendaraan</option>
             <option value="Kebersihan" class="fs-4">Kebersihan</option>
-            <option value="Kebersihan" class="fs-4">Lainnya</option>
+            <option value="Lainnya" class="fs-4">Lainnya</option>
         </select> <br>
         
         <label for="judul" class="fs-2">Aspirasi Anda</label><br>
