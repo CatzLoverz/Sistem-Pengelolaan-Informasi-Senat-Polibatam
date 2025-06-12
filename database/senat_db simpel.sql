@@ -101,7 +101,7 @@ INSERT INTO `struktur` (`Id_struktur`, `jabatan`, `nama`, `email`) VALUES
 (19, 'ANGGOTA KOMISI III', 'Ihsan Saputra, S.T., M.Sc.', 'ihsan@gmail.com');
 
 INSERT INTO `login` (`id_senat`, `email`, `password`, `foto`) VALUES
-(1, 'atmaja123putra@gmail.com', 'gasken1234', '../uploads/foto_profil.jpg');
+(1, '[Email Anda Disini]', '[Password Anda Disini]', '../uploads/foto_profil.jpg');
 
 INSERT INTO `aspirasi` (`id`, `judul`, `kategori`, `aspirasi`) VALUES
 (1, 'parkir kendaraan', 'parkir kendaraan', 'tolong perluas lahan untuk parkir ya'),
