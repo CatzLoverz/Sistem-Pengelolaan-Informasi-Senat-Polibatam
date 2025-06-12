@@ -81,7 +81,7 @@ CREATE TABLE `jadwal_email` (
 
 INSERT INTO `struktur` (`Id_struktur`, `jabatan`, `nama`, `email`) VALUES
 (1, 'KETUA ', 'Dr.Budi Sugandi, ST., M.Eng', 'budi@gmail.com'),
-(2, 'SEKRETARIS', 'Sudra Irawan, S.Pd.Si., M.Sc', 'atmaja123putra@gmail.com'),
+(2, 'SEKRETARIS', 'Sudra Irawan, S.Pd.Si., M.Sc', '[Email Anda Disini]'),
 (3, 'KETUA KOMISI I', 'Nanik Lestari,S.E., M.S.Ak', 'nanik@gmail.com'),
 (4, 'KETUA KOMISI II', 'Metta Santiputri, St., M.Sc., Ph.D', 'metta@dmail.com'),
 (5, 'KETUA KOMISI III', 'Hanifah Widiastuti, S.T., Ph.D', 'hanifah@gmail.com'),
