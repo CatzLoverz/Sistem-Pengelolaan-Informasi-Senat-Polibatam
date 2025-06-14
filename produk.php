@@ -34,7 +34,7 @@
         
         <tbody>
             <?php 
-            $conn = mysqli_connect("localhost", "Admin", "admin123", "senat_db");
+            include 'dashboard/dbpublic.php';
             $q = mysqli_query($conn, "SELECT produk.*, struktur.Id_struktur, struktur.nama  FROM produk LEFT JOIN struktur ON struktur.Id_struktur = produk.p_unggah");
             $no = 0;
             

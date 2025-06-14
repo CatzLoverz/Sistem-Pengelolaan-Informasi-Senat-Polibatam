@@ -35,16 +35,15 @@
         
         <tbody>
             <?php 
-            $conn = mysqli_connect("localhost", "Admin", "admin123", "senat_db");
-            // $q = mysqli_query($conn, "SELECT jadwal.*, jadwal_email.*, struktur.*  FROM jadwal LEFT JOIN jadwal_email ON jadwal.Id_rapat = jadwal_email.Id_rapat LEFT JOIN struktur ON struktur.Id_struktur = jadwal_email.Id_struktur");
-            $sql1 = "SELECT jadwal.Id_rapat, jadwaL_email.Id_rapat, struktur.Id_struktur, struktur.nama, struktur.Email FROM jadwal LEFT JOIN jadwal_email ON jadwal.Id_rapat = jadwal_email.Id_rapat LEFT JOIN struktur ON struktur.Id_struktur = jadwal_email.Id_struktur";
+            include 'dashboard/dbpublic.php';
+            $sql1 = "SELECT jadwal.Id_rapat, jadwal_email.Id_rapat, struktur.Id_struktur, struktur.nama, struktur.Email FROM jadwal LEFT JOIN jadwal_email ON jadwal.Id_rapat = jadwal_email.Id_rapat LEFT JOIN struktur ON struktur.Id_struktur = jadwal_email.Id_struktur";
             $result1 = $conn->query($sql1);
             $anggota = array();
             while($row = $result1->fetch_assoc()){
 
                 // Menambahkan data ke array jika Id_rapat tidak ada
                 if(isset($anggota[$row['Id_rapat']])){
-                    $anggota[   $row['Id_rapat']][] = $row['Email'];
+                    $anggota[$row['Id_rapat']][] = $row['Email'];
                 } else{
                     $anggota[$row['Id_rapat']] = array();
                     $anggota[$row['Id_rapat']][] = $row['Email'];

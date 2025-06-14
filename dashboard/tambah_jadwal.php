@@ -5,13 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 // Koneksi ke database
-$servername = "localhost";
-$username = "Admin";
-$password = "admin123";
-$dbname = "senat_db";
-
-// Membuat koneksi
-$conn = new mysqli($servername, $username, $password, $dbname);
+include('db.php');
 
 // Cek koneksi
 if ($conn->connect_error) {

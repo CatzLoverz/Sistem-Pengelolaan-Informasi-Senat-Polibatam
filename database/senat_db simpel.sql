@@ -1,7 +1,10 @@
 
-CREATE USER 'Admin'@'%' IDENTIFIED BY 'admin123';
-GRANT ALL PRIVILEGES ON senat_db.* TO 'Admin'@'%';
-FLUSH PRIVILEGES;
+-- CREATE USER 'adminWeb'@'%' IDENTIFIED BY 'admin123';
+-- GRANT ALL PRIVILEGES ON senat_db.* TO 'adminWeb'@'%';
+
+-- CREATE USER 'userWeb'@'%' IDENTIFIED BY 'user123';
+-- GRANT SELECT, INSERT, UPDATE, DELETE ON senat_db.* TO 'userWeb'@'%';
+-- FLUSH PRIVILEGES;
 
 CREATE DATABASE senat_db;
 USE senat_db;

@@ -1,4 +1,3 @@
-<?php include('dashboard/db.php');?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,6 +63,7 @@
     <div class="row container-lg mx-auto mt-3">
 
     <?php
+    include 'dashboard/dbpublic.php';
     include('dateConversion.php');
 
     if (isset($_GET['search']) ){

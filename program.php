@@ -33,7 +33,7 @@
         
         <tbody>
             <?php 
-            $conn = mysqli_connect("localhost", "Admin", "admin123", "senat_db");
+            include 'dashboard/dbpublic.php';
             $q = mysqli_query($conn, "SELECT program.*, struktur.Id_struktur, struktur.nama FROM program LEFT JOIN struktur ON struktur.Id_struktur = program.p_jawab");
             $no = 0;
 

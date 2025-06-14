@@ -1,4 +1,4 @@
-<?php include('dashboard/db.php');?>
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,7 +58,10 @@
 </head>
 
 <body>
-    <?php include('nav.php')?>
+    <?php 
+    include('nav.php'); 
+    include 'dashboard/dbpublic.php';
+    ?>
 
     <div class="container container-xl">
         <form action="search.php" method="GET" class="my-4">

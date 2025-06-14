@@ -1,4 +1,3 @@
-<?php include('dashboard/db.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,6 +64,7 @@
     <div class="row container-lg mx-auto mt-5 justify-content-sm-around">
 
         <?php
+        include 'dashboard/dbpublic.php';
         // Konfigurasi Pagination
         $newsPerPage = 6; // Jumlah berita per halaman
         $currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;

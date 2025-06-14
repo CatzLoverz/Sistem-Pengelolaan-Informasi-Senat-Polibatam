@@ -1,6 +1,6 @@
 <?php
 // Koneksi database
-$conn = new mysqli("localhost", "Admin", "admin123", "senat_db");
+include 'dbpublic.php';
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

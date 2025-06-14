@@ -33,7 +33,7 @@
         
         <tbody>
             <?php 
-            $conn = mysqli_connect("localhost", "Admin", "admin123", "senat_db");
+            include 'dashboard/dbpublic.php';
             $q = mysqli_query($conn, "SELECT * FROM struktur");
             $no = 0;
             while($data = mysqli_fetch_array($q)){
