@@ -1,16 +1,3 @@
-CREATE USER 'adminWeb'@'%' IDENTIFIED BY 'admin123';
-GRANT ALL PRIVILEGES ON senat_db.* TO 'adminWeb'@'%';
-
-CREATE USER 'userWeb'@'%' IDENTIFIED BY 'user123';
-GRANT SELECT, INSERT, UPDATE, DELETE ON senat_db.aspirasi TO 'userWeb'@'%';
-GRANT SELECT ON senat_db.berita TO 'userWeb'@'%';
-GRANT SELECT ON senat_db.jadwal TO 'userWeb'@'%';
-GRANT SELECT ON senat_db.jadwal_email TO 'userWeb'@'%';
-GRANT SELECT ON senat_db.produk TO 'userWeb'@'%';
-GRANT SELECT ON senat_db.program TO 'userWeb'@'%';
-GRANT SELECT ON senat_db.struktur TO 'userWeb'@'%';
-FLUSH PRIVILEGES;
-
 CREATE DATABASE senat_db;
 USE senat_db;
 
@@ -155,3 +142,17 @@ INSERT INTO `program` (`id_program`, `kegiatan`, `tanggal`, `p_jawab`) VALUES
 (3, 'Penyusunan Peraturan Perundang-undangan', '2024-11-18', 1),
 (4, 'Peningkatan Kebugaran Jasmani', '2024-11-18', 5),
 (5, 'tes', '2024-12-16', 1);
+
+
+CREATE USER 'adminWeb'@'%' IDENTIFIED BY 'admin123';
+GRANT ALL PRIVILEGES ON senat_db.* TO 'adminWeb'@'%';
+
+CREATE USER 'userWeb'@'%' IDENTIFIED BY 'user123';
+GRANT SELECT, INSERT, UPDATE, DELETE ON senat_db.aspirasi TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.berita TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.jadwal TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.jadwal_email TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.produk TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.program TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.struktur TO 'userWeb'@'%';
+FLUSH PRIVILEGES;
