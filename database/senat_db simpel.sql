@@ -1,10 +1,15 @@
+CREATE USER 'adminWeb'@'%' IDENTIFIED BY 'admin123';
+GRANT ALL PRIVILEGES ON senat_db.* TO 'adminWeb'@'%';
 
--- CREATE USER 'adminWeb'@'%' IDENTIFIED BY 'admin123';
--- GRANT ALL PRIVILEGES ON senat_db.* TO 'adminWeb'@'%';
-
--- CREATE USER 'userWeb'@'%' IDENTIFIED BY 'user123';
--- GRANT SELECT, INSERT, UPDATE, DELETE ON senat_db.* TO 'userWeb'@'%';
--- FLUSH PRIVILEGES;
+CREATE USER 'userWeb'@'%' IDENTIFIED BY 'user123';
+GRANT SELECT, INSERT, UPDATE, DELETE ON senat_db.aspirasi TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.berita TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.jadwal TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.jadwal_email TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.produk TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.program TO 'userWeb'@'%';
+GRANT SELECT ON senat_db.struktur TO 'userWeb'@'%';
+FLUSH PRIVILEGES;
 
 CREATE DATABASE senat_db;
 USE senat_db;
