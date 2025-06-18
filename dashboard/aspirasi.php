@@ -465,12 +465,6 @@ $senat = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM login WHERE id_sen
 <div id="layoutSidenav_content">
     <main>
     <?php
-    // Koneksi database
-    $conn = new mysqli("localhost", "Admin", "admin123", "senat_db");
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
 
     // Query untuk menghitung jumlah aspirasi berdasarkan kategori
     $sql = "SELECT kategori, COUNT(*) as count FROM aspirasi GROUP BY kategori";
